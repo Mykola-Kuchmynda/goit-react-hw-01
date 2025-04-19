@@ -1,11 +1,11 @@
 
 import userData from "../../userData.json";
 import Profile from "../Profile/Profile"
-import './App.css'
+import css from './App.module.css'
 
 const App = () => {
   return (
-    <>
+    <div className={css.container}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -13,7 +13,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </>
+    </div>
   );
 };
 
